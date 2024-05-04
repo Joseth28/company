@@ -1,0 +1,27 @@
+En general, el código muestra cómo se pueden usar clases y herencia en Python para modelar entidades y relaciones en un contexto empresarial.
+
+
+1.AbstractEmployee y Employee:
+AbstractEmployee es una clase abstracta que establece un método abstracto say_id(). 
+Employee es una subclase de AbstractEmployee.
+Employee inicializa un contador de identificación de empleado new_id y asigna un ID único a cada instancia de Employee que se crea. Tiene un atributo público _name y un atributo privado __company.
+
+
+2.User y Admin:
+User representa un usuario con un nombre de usuario y un rol. Admin es una subclase de Employee y User, lo que significa que hereda propiedades tanto de un empleado como de un usuario. Los roles predeterminados se establecen en "Admin".
+
+
+3.Manager:
+Manager es una subclase de Admin que representa a un gerente. No introduce nuevas funcionalidades, solo se diferencia por su rol.
+
+
+4.Meeting:
+Meeting es una clase que representa una reunión. Tiene una lista de asistentes (attendees) y permite agregar empleados a esta lista a través del operador de suma (+).
+También implementa el método __len__ para obtener el número de asistentes en la reunión.
+
+
+5.Uso:
+Se crean instancias de Employee, Admin y Manager.
+Se crea una instancia de Meeting y se agregan empleados a ella.
+Se establecen los nombres de los empleados.
+Se muestra información sobre los asistentes a la reunión, incluidos sus nombres y compañías a las que pertenecen.
